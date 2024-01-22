@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'styles/login.css' %}">
+</head>
+<body>
+
+    {% for i in messages %}
+        <h2>{{ i }}</h2>
+    {% endfor %}
+    <br>
+    <div class="login1">
+         <h2>Welcome</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="Enter the Username" class="username">
+        <br><br>
+        <input type="password" name="password" placeholder="Enter your Password" class="pass">
+        <br><br>
+        <input type="submit" class="sub1">
+    </form>
+    </div>
+</body>
+</html>

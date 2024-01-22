@@ -1,0 +1,55 @@
+body{
+  width: fit-content;
+  max-height: fit-content;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.full{
+  display: flex;
+  margin-top: 30px;
+  margin-left: 200px;
+}
+.pic{
+  text-align: end;
+  max-height: fit-content;
+  margin-top: -190px;
+}
+h2{
+  margin-top: 40px;
+  display: inline-block;
+  margin-left: 300px;
+  font-family:'Arial', sans-serif;
+}
+.username,.password,.cpassword,.fname,.lname,.email{
+  padding: 27px;
+  border-color: rgb(233, 237, 240);
+  border-style: solid;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-bottom-width: 0;
+}
+.sub1{
+  padding: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  border-radius: 10px;
+  background-color: rgb(59, 151, 255);
+  border: none;
+  color: white;
+}
+.reg{
+  align-items: center;
+  text-align: center;
+}
+.username{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-width: 0;
+}
+.cpassword{
+  border-bottom-width: 2px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

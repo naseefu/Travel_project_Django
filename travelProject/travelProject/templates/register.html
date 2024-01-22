@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'styles/registration.css' %}">
+</head>
+
+<body>
+  <h2>Registration Form</h2>
+  <div class="full">
+  <div class="reg">
+    <form action="" method="post" class="a1">
+        {% csrf_token %}
+      <input type="text" name="username" placeholder="Enter your Username" class="username">
+      <br>
+      <input type="text" name="first_name" placeholder="Enter your First name" class="fname">
+      <br>
+      <input type="text" name="last_name" placeholder="Enter your Last name" class="lname">
+      <br>
+      <input type="email" name="email" placeholder="Enter your Email" class="email">
+      <br>
+      <input type="password" name="password" placeholder="Enter your Password" class="password">
+      <br>
+      <input type="password" name="password1" placeholder="Confirm your Password" class="cpassword">
+      <br>
+      <br>
+      <br>
+      <input type="submit" class="sub1">
+    </form>
+  </div>
+  <div class="pic">
+    <img src="{% static 'images/bg_1.jpg' %}" alt="girl" width="80%" height="80%">
+  </div>
+</div>
+{% for msg in messages %}
+{{ msg }}
+{% endfor %}
+</body>
+
+</html>
